@@ -1,0 +1,15 @@
+<div class="container-fluid popularpart" *ngFor= "let category of mediaList.mediaContentByCategory"> 
+    <h4 class="site-title">{{category.mediaContentTitle}}</h4>
+    <swiper [config]="config" >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor= "let mediaContent of category.mediaContentList">
+          <img
+            [src]="'http://staging.connectingdotsinfotech.com:8080/firestixAPI_dev_2/api/v1/files/download/'+ mediaContent.portraitPosterId" />
+          <h4>{{mediaContent.title}}</h4>
+        </div>
+  
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
+  </div>

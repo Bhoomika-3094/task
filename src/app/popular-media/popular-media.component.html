@@ -1,0 +1,15 @@
+<div class="container-fluid popularpart">
+  <h4 class="site-title">Popular Movies | Series | Songs </h4>
+  <swiper [config]="config">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let popularMedia of mediaList.popularMediaContent">
+        <img
+          [src]="'http://staging.connectingdotsinfotech.com:8080/firestixAPI_dev_2/api/v1/files/download/'+popularMedia.portraitPosterId" />
+        <h4>{{popularMedia.title}}</h4>
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+</div>

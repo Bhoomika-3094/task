@@ -1,0 +1,8 @@
+<ngb-carousel *ngIf="images" [showNavigationArrows]="false" >
+    <ng-template ngbSlide *ngFor="let img of images">
+      <div class="picsum-img-wrapper" >
+        <img [src]="'http://staging.connectingdotsinfotech.com:8080/firestixAPI_dev_2/api/v1/files/download/'+img" alt="Random first slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  

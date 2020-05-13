@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+body{
+    background-color:#262626;
+}
+ngb-carousel .carousel-indicators{
+    left:inherit !important;
+    justify-content: right;
+    margin-left: 0px;
+    margin-right: 17px;
+}
+.carousel-indicators li{
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 50px;
+    height: 6px;
+    background-color: #f1b70d;
+}
+.carousel-indicators li.active{
+    background-color: #f1b70d;
+}
+.swiper-wrapper {
+    box-sizing: border-box;
+  }
+  swiper {
+    height: 340px;
+    width: 100%;
+  }
+
+  .swiper-slide img{
+    position: absolute;
+    top:0px;
+    right:0px;
+    left:0px;
+    width:100%;
+    height: 300px;
+    border-radius: 8px;
+}
+.swiper-slide h4{
+    position: absolute;
+    top:318px;
+    color: #fff;
+    font-size:14px;
+    font-weight: 400;;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    color:#f1b70d;
+}
+.swiper-container-autoheight .swiper-slide{
+    height: 300px;
+
+}
+.popularpart{
+    margin:30px 0px;
+}
+.site-title{
+    color:#f1b70d;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+    display:none;
+}
