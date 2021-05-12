@@ -27,7 +27,7 @@
     "ngx-useful-swiper": "^8.0.1-beta.2",
     "owl.carousel": "^2.3.4",
     "rxjs": "~6.4.0",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
